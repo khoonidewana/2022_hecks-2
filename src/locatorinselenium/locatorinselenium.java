@@ -13,7 +13,7 @@ public void IDDemo() {
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://opensource-demo.orangehrmlive.com/");
-	driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+	driver.findElement(By.id("txtUsername")).sendKeys("Admin"); //User can use thier own user name.
 	driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 	driver.findElement(By.id("btnLogin")).click();
 	driver.quit();
